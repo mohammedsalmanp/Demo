@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewDemo.ListviewDemoPage"
+             Title="ListviewDemoPage">
+    <!--<verticalstacklayout>
+        <carouselview indicatorview="indicatorview" margin="10">
+            <carouselview.itemssource>
+                <x:array type="{x:type x:string}">
+                    <x:string>mono</x:string>
+                    <x:string>monopoly</x:string>
+                    <x:string>monoesthetic</x:string>
+                    <x:string>monology</x:string>
+                    <x:string>monoty</x:string>
+                    <x:string>monow</x:string>
+                    <x:string>monosds</x:string>
+                </x:array>
+            </carouselview.itemssource>
+            <carouselview.itemtemplate>
+                <datatemplate>
+                    <stacklayout>
+                        <frame margin="0" hasshadow="true" bordercolor="darkgreen" heightrequest="100" widthrequest="300" horizontaloptions="center" verticaloptions="centerandexpand">
+                            <label text="{binding .} " verticaloptions="center" horizontaloptions="center"></label>
+                        </frame>
+
+                    </stacklayout>
+                </datatemplate>
+            </carouselview.itemtemplate>
+        </carouselview>
+        <indicatorview x:name="indicatorview" 
+                     indicatorcolor="lightgray"
+                     horizontaloptions="center"
+                     selectedindicatorcolor="darkgreen" />
+        
+    </verticalstacklayout>-->
+    <!--<ListView Margin="10" HasUnevenRows="True">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono</x:String>
+                <x:String>monopoly</x:String>
+                <x:String>monoesthetic</x:String>
+                <x:String>monology</x:String>
+                <x:String>monoty</x:String>
+                <x:String>monow</x:String>
+                <x:String>monosds</x:String>
+            </x:Array>
+        </ListView.ItemsSource>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Frame Margin="10" HasShadow="true"  HeightRequest="100" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding .} " VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </Frame>
+
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+    <!--<CollectionView SelectionMode="Single">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono</x:String>
+                <x:String>monopoly</x:String>
+                <x:String>monoesthetic</x:String>
+                <x:String>monology</x:String>
+                <x:String>monoty</x:String>
+                <x:String>monow</x:String>
+                <x:String>monosds</x:String>
+            </x:Array>
+        </CollectionView.ItemsSource>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame Margin="10" HasShadow="True"  HeightRequest="100" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Label Text="{Binding .} " VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>-->
+
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="First Section">
+                <TextCell Detail="TextCell Detail" Text="TextCell" />
+                <EntryCell Label="Entry Label" Text="EntryCell Text" />
+                <SwitchCell Text="SwitchCell Text" />
+                <ImageCell
+                    Detail="ImageCell Detail"
+                    ImageSource="dotnet_bot.svg"
+                    Text="ImageCell Text" />
+            </TableSection>
+            <TableSection Title="Second Section">
+                <TextCell Detail="TextCell Detail" Text="TextCell" />
+                <EntryCell Label="Entry Label" Text="EntryCell Text" />
+                <SwitchCell Text="SwitchCell Text" />
+                <ImageCell
+                    Detail="ImageCell Detail"
+                    ImageSource="dotnet_bot.svg"
+                    Text="ImageCell Text" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+
+
+</ContentPage>
